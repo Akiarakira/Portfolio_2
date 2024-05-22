@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/8de076890f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <main>
+        <section class="title-section">
+            <h1 class="title" id="main_title" x-data="{ message: 'I ❤️ Alpine' }" x-text="message">Portafolio: Full Stack</h1>
+        </section>
+        <section class="principal-section">
+            <h2 class="title-2">Proyectos Front End</h2>
+            <section class="container">
+                <div class="proyect sidebar" aria-label="Proyecto de SideBar con JavaScript" tabindex="0">
+                    <h3 class="subtitle">Sidebar</h3>
+                    <p class="description">Proyecto personal realizado con HTML5, CSS3 JavaScript</p>
+                    <a href="https://akiarakira.github.io/Sidebar/" target="_blank" class="btn">¡Ver aquí!</a>
+                </div>
+                <div class="proyect mobilefirst" tabindex="0">
+                    <h3 class="subtitle">Mobile First</h3>
+                    <p class="description">Proyecto de práctica del curso de Mobile First</p>
+                    <a href="https://akiarakira.github.io/Mobilefirst/#plans" target="_blank" class="btn">¡Ver aquí!</a>
+                </div>
+                <div class="proyect twitter" tabindex="0">
+                    <h3 class="subtitle">Clon de Twitter</h3>
+                    <p class="description">Proyecto personal, práctica de CSS3</p>
+                    <a href="https://akiarakira.github.io/ClonTwitter/" target="_blank" class="btn">¡Ver aquí!</a>
+                </div>
+                <div class="proyect platzi" tabindex="0">
+                    <h3 class="subtitle">Reto de PlatziDay</h3>
+                    <p class="description">Reto propuesto por Platzi como práctica de CSS3</p>
+                    <a href="https://akiarakira.github.io/RetoPlatzi/" target="_blank" class="btn">¡Ver aquí!</a>
+                </div>
+            </section>
+        </section>
+        <section>
+            <h2 class="title-2">Proyectos de Wordpress</h2>
+            <section class="secondary-section">
+                <div class="proyect intranet" tabindex="0">
+                    <h3 class="subtitle">WordPress Intranet</h3>
+                    <p class="description">Proyecto realizado para la empresa Seguros Catatumbo como Intranet</p>
+                    <!-- <a href="#" target="_blank" class="btn">¡Ver aquí!</a> -->
+                </div>
+            </section>
+        </section>
+        <!-- <section> 
+            <h2 class="title-2">Proyectos de Laravel</h2>
+            <section>
+
+            </section>
+        </section> -->
+        <section class="section-aboutme">
+            <div class="img-container">
+                <figure class="photo">
+                    <img class="me-photo" src="./css/img/photo.jpg" alt="">
+                </figure>
+                <h2 class="subtitle">FullStack</h2>
+                <p class="description name">Andreina Di Brigida</p>
+            </div>
+            <div class="info-container">
+                <h2 class="subtitle">Sobre mi 👩‍💻: </h2>
+                <p class="description aboutme">¡Hola! Soy una Web Developer en continuo aprendizaje. Empece hace un año y medio a estudiar JavaScript, me encantó el poder verle utilidad y poder practicar en el navegador y ver el resultado de lo que hacia.
+                    <br>
+                    Como leiste, empecé con JavaScript, pero luego me ocupe de aprender HTML y CSS. Y en esto centre mis primeros proyectos. 
+                    <br>
+                    Continuando mis estudios encontre trabajo en una compañía de seguros, ahí me pidieron realizar proyectos con PHP, así que aprendí y les realicé 3 proyectos en PHP, con conexión a su base de datos IBM iSERIES. Pero también me asignaron la tarea de recreales la página web que utilizan de Intranet, en WordPress.
+                    <br>
+                    Arriba presento algunos de mis proyectos, los iré actualizando conforme avancen mis conocimientos ♥</p>
+                <ul class="socialm">
+                    <li><a href="https://www.linkedin.com/in/andreina-di-brigida" aria-label="linkedin" target="_blank" class="contact"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/Akiarakira" target="_blank" aria-label="GitHub" class="contact"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://twitter.com/andree_gabby" target="_blank" aria-label="Twitter" class="contact"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="mailto:Andreinadibrigida8@gmail.com" target="_blank" aria-label="Correo" class="contact"><i class="fa-regular fa-envelope"></i></a></li>
+                    <!-- <li><a href=""></a></li> -->
+                </ul>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
+<!-- https://agency.contentboostfactory.com/home-page -->
