@@ -61,7 +61,8 @@ main {
 
 .container {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(2, 50%);
+    gap: 4rem;
     margin: 0 auto;
     padding: 15px;
     justify-items: center;
