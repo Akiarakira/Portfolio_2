@@ -321,6 +321,7 @@ main {
     align-items: center;
     width: 100%;
     height: auto;
+    padding: 12px;
 }
 
 /* Sidebar Section: */
