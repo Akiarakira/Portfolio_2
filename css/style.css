@@ -11,8 +11,15 @@ crear variables para:
 -h1, h2, h3, h4
 -parrafos
 */
+body.dark-mode {
 
-:root {
+}
+
+body.light-mode {
+
+}
+
+body, body.default-mode {
     --blur-text: rgb(80, 41, 120);
     --lilac-text: #a791f5;
     --blue-intense: #021F59;
@@ -20,7 +27,8 @@ crear variables para:
     --purple: #7162D9;
     --darker-purple: #B385F2;
     --lithg-blue: #5854BF;
-    --light-text: white;
+    --title-text: white;
+    --desc-text: white;
 }
 
 * {
@@ -52,7 +60,7 @@ main {
 }
 
 h1, h2, h3, h4, h5 {
-    color: var(--light-text);
+    color: var(--title-text);
 }
 
 /* Title section: */
@@ -91,13 +99,19 @@ h1, h2, h3, h4, h5 {
     font-size: 4rem;
 }
 
-.container {
+.container, .last-container {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     gap: 4rem;
     margin: 0 auto;
     padding: 15px;
     justify-items: center;
+}
+
+.last-container{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 0;
 }
 
 .proyect {
@@ -129,7 +143,7 @@ h1, h2, h3, h4, h5 {
     padding: 8px;
     width: auto;
     font-size: 1.6rem;
-    color: var(--light-text);
+    color: var(--title-text);
     /* text-shadow: 2px 2px 2px var(--blur-text); */
 }
 
@@ -369,6 +383,7 @@ section.container-experience {
 .menu-list ul li a {
     color: white;
     font-size: 2rem;
+    display: flex;
 }
 
 .logoImg {
@@ -410,7 +425,7 @@ section.container-experience {
     align-items: center;
 } */
 
-.social-media-card {
+.contact-card {
     width: 100%;
     max-width: 200px;
     height: 150px;
@@ -422,9 +437,15 @@ section.container-experience {
     right: -140px;
     bottom: 40px;
     transform: rotate(320deg);
-    transition: all 2s;
+    transition: ease-in-out 2s;
+    text-align: center;
 }
 
-.social-media-card:hover {
+.contact-card:hover {
     right: 0;
+}
+
+.contact-title-card {
+    font-size: 2rem;
+    padding: 1.5rem;
 }
