@@ -12,25 +12,38 @@ crear variables para:
 -parrafos
 */
 body.darkMode {
-
+    --backgrnd-color: #000714;
+    --desc-text: white;
+    --title-text: #B385F2;
+    --contact-icons: white;
+    --bg-card: #502978;
+    --contact-titleCard: white;
+    --border-card: #B385F2;
 }
-
+ 
 body.lightMode {
     --backgrnd-color: aliceblue;
     --desc-text: #021F59;
     --title-text: #502978;
+    --contact-icons: #B385F2;
+    --bg-card: #000714;
+    --contact-titleCard: white;
+    --border-card: #7162D9;
 }
 
 body.defaultMode {
-    --blur-text: #502978;
+    --bg-card: #502978;
     --lilac-text: #a791f5;
     --blue-intense: #021F59;
     --pink: #F294C8;
     --purple: #7162D9;
-    --darker-purple: #B385F2;
+    --border-card: #B385F2;
     --lithg-blue: #5854BF;
     --title-text: white;
     --desc-text: white;
+    --bgn-sections: #021f59b5;
+    --contact-icons: white;
+    --contact-titleCard: white;
 }
 
 * {
@@ -59,6 +72,10 @@ body.defaultMode main {
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
+}
+
+body.darkMode {
+    background-color: var(--backgrnd-color);
 }
 
 h1, h2, h3, h4, h5 {
@@ -120,13 +137,22 @@ h1, h2, h3, h4, h5 {
     display: grid;
     align-content: center;
     width: 80%;
-    height: 250px;
+    height: 280px;
     border: none;
     backdrop-filter: blur(25px);
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.616);
     justify-content: space-evenly;
     padding: 8px;
+}
+
+body.lightMode .proyect {
+    background-color: #ddd4ff;
+}
+
+body.darkMode .proyect {
+    background-color: #140821;
+    box-shadow: 5px 5px 5px #c0b6e547;
 }
 
 .subtitle {
@@ -177,8 +203,8 @@ h1, h2, h3, h4, h5 {
 }
 
 section#experience {
-    background: #021f59b5;
-    box-shadow: 0 0 4px 3px #021f59b5;
+    background: var(--bgn-sections);
+    box-shadow: 0 0 4px 3px var(--bgn-sections);
 }
 
 section.container-experience {
@@ -299,11 +325,15 @@ section.container-experience {
 
 .info-container {
     padding-top: 35px;
-    background-color: rgb(0 45 112 / 42%);
-    backdrop-filter: blur(25px);
+    background-color: var(--bgn-sections);
+    box-shadow: 0 0 4px 3px var(--bgn-sections);
     padding-bottom: 12px;
 }
 
+body.lightMode .info-container {
+    background-color: #502978;
+    box-shadow: 0 0 4px 3px #502978;
+}
 .aboutme {
     width: 100%;
     max-width: 70%;
@@ -320,9 +350,8 @@ section.container-experience {
     text-align: center;
     width: auto;
     font-size: 3.8rem;
-    color: white;
+    color: var(--contact-icons);
     text-shadow: 2px 2px 2px var(--blur-text);
-
 }
 
 .socialm {
@@ -331,7 +360,7 @@ section.container-experience {
 }
 
 @media (max-width: 1100px) {
-    .container {
+    .container, .last-container {
         width: 90vw;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -342,17 +371,27 @@ section.container-experience {
     }
     .proyect {
         width: 85%;
+        height: 350px;
+    }
+    .personal-proyect {
         height: 250px;
+    }
+    .logo-container  {
+        display: grid;
+        grid-template-columns: repeat(3, 50%);
     }
 }
 @media (max-width: 620px) {
-    .container {
+    .container, .last-container {
         width: 90vw;
         display: grid;
         grid-template-columns: 100%; 
     }
     .proyect {
         width: 85%;
+        height: 400px;
+    }
+    .personal-proyect {
         height: 250px;
     }
     .title-2 {
@@ -376,11 +415,11 @@ section.container-experience {
     position: fixed;
     top: 0;
     z-index: 2;
-    background-color: #cabef66e;
+    background-color: #a491eb6e;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 20px 20px #cabef66e;
+    box-shadow: 0 0 20px 20px #a491eb6e;
 }
 .menu-list {
     width: 100%;
@@ -409,9 +448,13 @@ section.container-experience {
 }
 
 .fa-bluesky {
-    background-image: linear-gradient(45deg, var(--title-text), var(--darker-purple), var(--lilac-text));
+    background-image: linear-gradient(45deg, var(--title-text), var(--bg-card), var(--border-card));
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.fa-sun, .fa-moon {
+    color: var(--desc-text);
 }
 
 .logoImg {
@@ -424,7 +467,8 @@ section.container-experience {
     transform: scale(1.5);
 }
 .logo-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
@@ -432,35 +476,14 @@ section.container-experience {
     padding: 12px;
 }
 
-/* Sidebar Section: */
-
-/* .mainSidebar {
-    display: flex;
-    height: 100vh;
-    background: var(--lilac-text); 
-    //backdrop-filter: blur(6px);
-    padding: 2rem 1rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    border-radius: 0 12px 12px 0;
-    transition: all 0.3s ease-out 0.3s;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-}
-.menu-list {
-    display: flex;
-    align-items: center;
-} */
-
 .contact-card {
     width: 100%;
     max-width: 200px;
     height: 150px;
     z-index: 2;
     border-radius: 15px;
-    border: solid 8px var(--lithg-blue);
-    background-color: var(--darker-purple);
+    border: solid 8px var(--border-card);
+    background-color: var(--bg-card);
     position: fixed;
     right: -140px;
     bottom: 40px;
@@ -476,4 +499,5 @@ section.container-experience {
 .contact-title-card {
     font-size: 2rem;
     padding: 1.5rem;
+    color: var(--contact-titleCard);
 }
