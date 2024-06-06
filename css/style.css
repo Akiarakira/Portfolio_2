@@ -460,11 +460,17 @@ body.lightMode .info-container {
 .logoImg {
     width: 100%;
     max-width: 50px;
+    margin: 6px;
+}
+.logoAlpine, .logoHtmx {
+    height: 50px;
 }
 .logoImg:hover,
 .logoImg:focus {
     transition: all 0.4s ease-in-out;
     transform: scale(1.5);
+    background-color: whitesmoke;
+    border-radius: 25px;
 }
 .logo-container {
     display: grid;
