@@ -11,16 +11,18 @@ crear variables para:
 -h1, h2, h3, h4
 -parrafos
 */
-body.dark-mode {
+body.darkMode {
 
 }
 
-body.light-mode {
-
+body.lightMode {
+    --backgrnd-color: aliceblue;
+    --desc-text: #021F59;
+    --title-text: #502978;
 }
 
-body, body.default-mode {
-    --blur-text: rgb(80, 41, 120);
+body.defaultMode {
+    --blur-text: #502978;
     --lilac-text: #a791f5;
     --blue-intense: #021F59;
     --pink: #F294C8;
@@ -50,7 +52,7 @@ a {
     text-decoration: none;
 }
 
-main {
+body.defaultMode main {
     width: 100%;
     height: 100vh;
     background-image: url("./img/descarga-nueva.jpg");
@@ -131,9 +133,15 @@ h1, h2, h3, h4, h5 {
     text-align: center;
     font-size: 3rem;
     padding: 8px;
-    color: rgb(248, 237, 254);
-    
 }
+
+.subtitle-tc {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--desc-text);
+    padding: 6px;
+}
+
 .company-name {
     text-align: left;
 }
@@ -143,7 +151,7 @@ h1, h2, h3, h4, h5 {
     padding: 8px;
     width: auto;
     font-size: 1.6rem;
-    color: var(--title-text);
+    color: var(--desc-text);
     /* text-shadow: 2px 2px 2px var(--blur-text); */
 }
 
@@ -187,12 +195,11 @@ section.container-experience {
 
 .front-image {
     width: 100%;
-    height: 400px;
 }
 
 .front-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .btn {
@@ -375,15 +382,36 @@ section.container-experience {
     justify-content: center;
     box-shadow: 0 0 20px 20px #cabef66e;
 }
+.menu-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 .menu-list ul {
     display: flex;
     justify-content: center;
     gap: 1.4rem;
 }
 .menu-list ul li a {
-    color: white;
+    color: var(--desc-text);
     font-size: 2rem;
     display: flex;
+}
+
+.dark-mode-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.dark-mode-btns div i {
+    width: 3rem;
+    font-size: 2.2rem;
+}
+
+.fa-bluesky {
+    background-image: linear-gradient(45deg, var(--title-text), var(--darker-purple), var(--lilac-text));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .logoImg {
