@@ -41,7 +41,7 @@ body.defaultMode {
     --lithg-blue: #5854BF;
     --title-text: white;
     --desc-text: white;
-    --bgn-sections: #021f59b5;
+    --bgn-sections: #140821c2;
     --contact-icons: white;
     --contact-titleCard: white;
 }
@@ -113,9 +113,9 @@ h1, h2, h3, h4, h5 {
     width: 100%;
     max-width: 25%;
     text-align: center;
-    margin: 0 auto;
     padding: 12px;
     font-size: 4rem;
+    margin: 2rem auto 1rem;
 }
 
 .container, .last-container {
