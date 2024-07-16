@@ -23,7 +23,7 @@
                 <ul>
                     <li><a href="#work-experience">Work Experience</a></li>
                     <li><a href="#experience">Professional Experience</a></li>
-                    <li><a href="#about-me">About Me</a></li>
+                    <!-- <li><a href="#about-me">About Me</a></li> -->
                     <li><a href="#personal-projects">Personal Projects</a></li>
                 </ul>
                 <div class="dark-mode-btns">
@@ -61,6 +61,12 @@
                         <img class="logoImg" src="./css/img/css-3-svgrepo-com.svg" alt="CSS Logo">
                         <img class="logoImg" src="./css/img/javascript-svgrepo-com.svg" alt="JavaScript Logo">
                     </div>
+                    <div class="neon-block">
+                        <div class="btn cv-btn block">
+                            <span class="rainbow"></span>
+                            Donwload CV
+                        </div>
+                    </div>
                 </section>
                 <!-- <section>
                     <img src="" alt="">
@@ -69,41 +75,51 @@
             <section id="work-experience" class="workExperience-section">
                 <h2 class="title-2">Work Experience: </h2>
                 <section class="container">
-                    <div  class="proyect bdstreams" aria-label="Billion Dollar Streams" tabindex="0">
+                    <div  class="project bdstreams" aria-label="Billion Dollar Streams" tabindex="0">
+                    <div class="inner">
                         <h3 class="subtitle">Billion Dollar Streams</h3>
                         <p class="description work-project-desc">I was in charge of styling the website</p>
                         <a href="https://www.billiondollarstreams.com/main-page" target="_blank" class="btn">¡Ver aquí!</a>
                         <p class="subtitle-tc">Technologies:</p>
                         <div class="description tech-used">CSS</div>
                     </div>
-                    <div  class="proyect sac" aria-label="Same As Cash Page" tabindex="0">
-                        <h3 class="subtitle">Same as Cash</h3>
-                        <p class="description work-project-desc">Full remake of the website</p>
-                        <a href="https://webuysameascash.com/" target="_blank" class="btn">¡Ver aquí!</a>
+                    </div>
+                    <div  class="project sac" aria-label="Same As Cash Page" tabindex="0">
+                        <div class="inner">
+                            <h3 class="subtitle">Same as Cash</h3>
+                            <p class="description work-project-desc">Full remake of the website</p>
+                            <a href="https://webuysameascash.com/" target="_blank" class="btn">¡Ver aquí!</a>
+                            <p class="subtitle-tc">Technologies:</p>
+                            <div class="description tech-used">WordPress</div>
+                        </div>
+                    </div>
+                    <div  class="project ppw" aria-label="projecto Prospector Web" tabindex="0">
+                        <div class="inner">
+                            <h3 class="subtitle">Prospector Web</h3>
+                            <p class="description work-project-desc">Developed plugins and themes for the platform. Led the redesign of the platform, implementing a dark mode, a new sidebar navigation, and a drip campaign functionality. Performed thorough unit testing of developed features and functionalities.</p>
+                            <!-- <a href="https://prospectorweb.com/" target="_blank" class="btn">¡Ver aquí!</a> -->
+                            <p class="subtitle-tc">Technologies:</p>
+                            <div class="description tech-used">AlpineJS, JS, TS, PHP, Popper, WordPress, SASS, HTMX, CSS</div>
+                        </div>
+                    </div>
+                    <div  class="project contentbf" aria-label="Content Boost Factory" tabindex="0">
+                        <div class="inner">
+                            <h3 class="subtitle">Content Boost Factory</h3>
+                            <p class="description work-project-desc">I was in charge of styling the website</p>
+                            <!-- <a href="https://agency.contentboostfactory.com/home-page" target="_blank" class="btn">¡Ver aquí!</a> -->
+                            <p class="subtitle-tc">Technologies:</p>
+                            <div class="description tech-used">CSS</div>
+                        </div>
+                    </div>
+                </section>
+                <div class="project intranet" tabindex="0">
+                    <div class="inner">
+                        <h3 class="subtitle">WordPress Intranet</h3>
+                        <p class="description work-project-desc">Developed the company intranet portal using WordPress, creating a user-friendly platform for internal communication and resource sharing.</p>
+                        <!-- <a href="#" target="_blank" class="btn">¡Ver aquí!</a> -->
                         <p class="subtitle-tc">Technologies:</p>
                         <div class="description tech-used">WordPress</div>
                     </div>
-                    <div  class="proyect ppw" aria-label="Proyecto Prospector Web" tabindex="0">
-                        <h3 class="subtitle">Prospector Web</h3>
-                        <p class="description work-project-desc">Developed plugins and themes for the platform. Led the redesign of the platform, implementing a dark mode, a new sidebar navigation, and a drip campaign functionality. Performed thorough unit testing of developed features and functionalities.</p>
-                        <!-- <a href="https://prospectorweb.com/" target="_blank" class="btn">¡Ver aquí!</a> -->
-                        <p class="subtitle-tc">Technologies:</p>
-                        <div class="description tech-used">AlpineJS, JS, TS, PHP, Popper, WordPress, SASS, HTMX, CSS</div>
-                    </div>
-                    <div  class="proyect contentbf" aria-label="Content Boost Factory" tabindex="0">
-                        <h3 class="subtitle">Content Boost Factory</h3>
-                        <p class="description work-project-desc">I was in charge of styling the website</p>
-                        <!-- <a href="https://agency.contentboostfactory.com/home-page" target="_blank" class="btn">¡Ver aquí!</a> -->
-                        <p class="subtitle-tc">Technologies:</p>
-                        <div class="description tech-used">CSS</div>
-                    </div>
-                </section>
-                <div class="proyect intranet" tabindex="0">
-                    <h3 class="subtitle">WordPress Intranet</h3>
-                    <p class="description work-project-desc">Developed the company intranet portal using WordPress, creating a user-friendly platform for internal communication and resource sharing.</p>
-                    <!-- <a href="#" target="_blank" class="btn">¡Ver aquí!</a> -->
-                    <p class="subtitle-tc">Technologies:</p>
-                    <div class="description tech-used">WordPress</div>
                 </div>
             </section>
             <section id="experience" class="experience-section">
@@ -162,25 +178,33 @@
             <section id="personal-projects" class="last-section">
                 <h2 class="title-2">Personal Projects</h2>
                 <section class="last-container">
-                    <div class="proyect personal-proyect sidebar" aria-label="Proyecto de SideBar con JavaScript" tabindex="0">
-                        <h3 class="subtitle">Sidebar</h3>
-                        <p class="description">Personal project made with HTML5, CSS3 JavaScript</p>
-                        <a href="https://akiarakira.github.io/Sidebar/" target="_blank" class="btn">¡Ver aquí!</a>
+                    <div class="project personal-project sidebar" aria-label="projecto de SideBar con JavaScript" tabindex="0">
+                        <div class="inner">
+                            <h3 class="subtitle">Sidebar</h3>
+                            <p class="description">Personal project made with HTML5, CSS3 JavaScript</p>
+                            <a href="https://akiarakira.github.io/Sidebar/" target="_blank" class="btn">¡Ver aquí!</a>
+                        </div>
                     </div>
-                    <div class="proyect personal-proyect mobilefirst" tabindex="0">
-                        <h3 class="subtitle">Mobile First</h3>
-                        <p class="description">Mobile First Course Practice Project</p>
-                        <a href="https://akiarakira.github.io/Mobilefirst/#plans" target="_blank" class="btn">¡Ver aquí!</a>
+                    <div class="project personal-project mobilefirst" tabindex="0">
+                        <div class="inner">
+                            <h3 class="subtitle">Mobile First</h3>
+                            <p class="description">Mobile First Course Practice Project</p>
+                            <a href="https://akiarakira.github.io/Mobilefirst/#plans" target="_blank" class="btn">¡Ver aquí!</a>
+                        </div>
                     </div>
-                    <div class="proyect personal-proyect twitter" tabindex="0">
-                        <h3 class="subtitle">Twitter clone</h3>
-                        <p class="description">Personal project, CSS3 practice</p>
-                        <a href="https://akiarakira.github.io/ClonTwitter/" target="_blank" class="btn">¡Ver aquí!</a>
+                    <div class="project personal-project twitter" tabindex="0">
+                        <div class="inner">
+                            <h3 class="subtitle">Twitter clone</h3>
+                            <p class="description">Personal project, CSS3 practice</p>
+                            <a href="https://akiarakira.github.io/ClonTwitter/" target="_blank" class="btn">¡Ver aquí!</a>
+                        </div>
                     </div>
-                    <div class="proyect personal-proyect platzi" tabindex="0">
-                        <h3 class="subtitle">PlatziDay Challenge</h3>
-                        <p class="description">Challenge proposed by Platzi as a CSS3 practice</p>
-                        <a href="https://akiarakira.github.io/RetoPlatzi/" target="_blank" class="btn">¡Ver aquí!</a>
+                    <div class="project personal-project platzi" tabindex="0">
+                        <div class="inner"> 
+                            <h3 class="subtitle">PlatziDay Challenge</h3>
+                            <p class="description">Challenge proposed by Platzi as a CSS3 practice</p>
+                            <a href="https://akiarakira.github.io/RetoPlatzi/" target="_blank" class="btn">¡Ver aquí!</a>
+                        </div>
                     </div>
                 </section>
             </section>
@@ -197,11 +221,11 @@
                 <!-- <h2 class="subtitle">Sobre mi 👩‍💻: </h2> -->
                 <!-- <p class="description aboutme">¡Hola! Soy una Web Developer en continuo aprendizaje. Empece hace un año y medio a estudiar JavaScript, me encantó el poder verle utilidad y poder practicar en el navegador y ver el resultado de lo que hacia.
                     <br>
-                    Como leiste, empecé con JavaScript, pero luego me ocupe de aprender HTML y CSS. Y en esto centre mis primeros proyectos. 
+                    Como leiste, empecé con JavaScript, pero luego me ocupe de aprender HTML y CSS. Y en esto centre mis primeros projectos. 
                     <br>
-                    Continuando mis estudios encontre trabajo en una compañía de seguros, ahí me pidieron realizar proyectos con PHP, así que aprendí y les realicé 3 proyectos en PHP, con conexión a su base de datos IBM iSERIES. Pero también me asignaron la tarea de recreales la página web que utilizan de Intranet, en WordPress.
+                    Continuando mis estudios encontre trabajo en una compañía de seguros, ahí me pidieron realizar projectos con PHP, así que aprendí y les realicé 3 projectos en PHP, con conexión a su base de datos IBM iSERIES. Pero también me asignaron la tarea de recreales la página web que utilizan de Intranet, en WordPress.
                     <br>
-                    Arriba presento algunos de mis proyectos, los iré actualizando conforme avancen mis conocimientos ♥</p> -->
+                    Arriba presento algunos de mis projectos, los iré actualizando conforme avancen mis conocimientos ♥</p> -->
                 <ul class="socialm">
                     <li><a href="https://www.linkedin.com/in/andreina-di-brigida" aria-label="linkedin" target="_blank" class="contact"><i class="fa-brands fa-linkedin"></i></a></li>
                     <li><a href="https://github.com/Akiarakira" target="_blank" aria-label="GitHub" class="contact"><i class="fa-brands fa-github"></i></a></li>
