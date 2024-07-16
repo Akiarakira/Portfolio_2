@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5 {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     gap: 4rem;
-    margin: 0 auto;
+    margin: 0 auto 4rem;
     padding: 15px;
     justify-items: center;
 }
@@ -408,7 +408,7 @@ body.lightMode .info-container {
         width: 90vw;
         display: grid;
         grid-template-columns: 50% 50%;
-        margin: 0 auto;
+        margin: 0 auto 4rem;
         padding: 8px;
         gap: 25px;
         justify-items: center;
